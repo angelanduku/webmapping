@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Angela's map</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+    
+</head>
+<style>
+a:hover {
+  background-color: Pink;
+}
+</style>
+
+<a href="#" style="margin-left: 40% ; font-size: 30px; font-family: Times New Roman, serif; color: rgb(249,49,84);">WEB MAPPING</a>
+<br
+<a href="#" style="margin-left: 40% ; font-size: 30px; font-family: Times New Roman, serif; color: red;">This your current location</a>
+
+
+<body>
+    <section>
+<div id="map" style="width:100%; height:400px;"></div>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script>
+            // map options
+            var mapOptions = {
+             center:[0.0074, 37.0722],
+             zoom:15
+            }
+            //create map object
+            var map = new L.map('map', mapOptions)
+            //layer obj
+            var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
+         
+            //add layer
+            map.addLayer(layer);
+         
+         
+         </script>
+    </section>
+
+    <section class="footer">
+    
+        <style>
+        .footer{
+            
+            background-color: rgb(245,255,250);
+            min-height: 30vh; padding: 8px;
+    
+
+        }
+       
+        </style>
+        
+       <div class="footer_section">
+       <style>
+        .footer_section{
+            display: flex;
+            flex-direction: row;
+            row-gap: 2rem;
+            color: navy;
+			font-family: fantasy;
+            list-style: none;
+            margin-top: 1.8rem;
+        }
+       </style>
+       <li class="contributers;"><a onclick="window.alert('WELCOME')">CONTRIBUTERS</a>
+        <ul style="color: rgb(0, 0, 0); ;">Angela Nduku</ul>
+         
+       </li>
+       <li  style="margin-left: 30% ;" class="authers">AUTHORS
+        <ul style="color:rgb(0, 0, 0);">Angela Nduku</ul>
+    </li>
+       <li  style="margin-left: 20% ;" class="marginal information">MARGINAL INFORMATION
+        <ul style="color: rgb(0, 0, 0);">Angela Nduku</ul>
+		<ul style="color: rgb(0, 0, 0);">&copy; &#127757; 2022</ul>
+    </li>
+        </div>
+    </div>
+    
+</section>
+
+</body>
+</html>
